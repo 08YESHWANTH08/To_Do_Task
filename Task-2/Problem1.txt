@@ -1,0 +1,19 @@
+This Program will given 'True' if a given number is divisible by 3 and 'False' if a given number is not divisible by 3.
+
+return <- 0 
+i <- 3 
+num <- INPUT #number which we suppose to check whether divisible by 3 or not
+IF num>0 THEN
+    FOR i <- 3 TO num+1 step 3 #step will increase i by 3 values after each iteration
+        IF num==i THEN
+            return <- 1
+        ENDIF
+    IF return==1 THEN
+        OUTPUT "True"
+    ELSE
+        OUTPUT "False"
+    ENDIF
+ELSE
+    OUTPUT "Enter A Positive Number"
+
+
