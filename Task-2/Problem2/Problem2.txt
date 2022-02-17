@@ -1,0 +1,21 @@
+This Program will print the nth term in the Fibonacci Series, Where n will be a input value.
+
+
+num1 <- 0 #First term of the Fibonacci series
+num2 <- 1 #Second term of the Fibonacci series
+step <- 0 #increment part of the WHILE loop
+term <- INPUT #Enter The Value Of The Term For Which You Want The Value From Fibonacci Series
+IF term > 0 THEN 
+    WHILE step<=term
+    IF step==term THEN
+        OUTPUT num1
+    ENDIF
+    ASSIGN tmp <- num1+num2
+    ASSIGN num1 <- num2
+    ASSIGN num2 <- tmp
+    ASSIGN step <- step+1
+ELSE
+    OUTPUT "Enter A Valid Term Value"
+ENDIF
+
+    
