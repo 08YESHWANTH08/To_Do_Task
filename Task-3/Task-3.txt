@@ -1,4 +1,4 @@
-Name-YESHWANTH A
+Name: YESHWANTH A
 Roll No.: CH.EN.U4CSE21263
-Title- Food Host
-Genre- Online Food Delivery Service
+Title: Food Host
+Genre: Online Food Delivery Service
