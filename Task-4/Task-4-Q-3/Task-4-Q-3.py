@@ -1,6 +1,5 @@
 from tabulate import tabulate
 list1=[["Roll No","Name","Marks"]] #Yeshwanth A CH.EN.U4CSE21263
-l=[]
 cond='Y'
 dup=1
 while (cond.lower()=='y'):
@@ -13,6 +12,8 @@ while (cond.lower()=='y'):
     elif choice==3:
         element = int(input("Enter The Roll No:"))
         for i in range(len(list1)):
+            global l
+            l=[]
             if element == list1[i][0]:
                 l=[list1[i]]
                 print(l)
