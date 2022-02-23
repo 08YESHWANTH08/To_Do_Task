@@ -11,7 +11,6 @@ while (cond.lower()=='y'):
     elif choice==2:
         print(tabulate(list1,headers='firstrow',tablefmt='grid'))
     elif choice==3:
-
         element = int(input("Enter The Roll No:"))
         for i in range(len(list1)):
             if element == list1[i][0]:
