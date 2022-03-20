@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:url("https://www.ventureharbour.com/wp-content/uploads/2019/01/to-do-list-apps-planners-768x407.png");
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'Questrial', sans-serif;
+    min-height: 100vh;
+}
+h1{
+    color:black;
+    font-size:3rem;
+}
+h1,form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+}
+form button,form input{
+    position:relative;
+    font-size: 1.5rem;
+    border: 0;
+    background:white;
+    padding:0.1rem;
+    border-radius: 8px;
+}
+
+form button{
+    background:blue;
+    color: white;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+form button:hover{
+    background: gray;
+    color:blue;
+}
+
+.todo-container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.todo-List{
+    display:flex;
+    min-width: 50%;
+    list-style: none;
+}
+
+.todo{
+    border-radius: 8px;
+    margin: 0.5rem;
+    background:white;
+    color:blue;
+    font-size: 1rem;
+    display:flex;
+    align-items: center;
+}
+.todo li{
+    flex: 1;
+}
+.todo current{
+    flex:1;
+}
+.trash-btn,.complete-btn{
+    border:none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.selection-btn{
+    border:none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+.complete-btn{
+    background: rgb(11, 190, 11);
+    color: white;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.complete-btn:hover{
+    background: gray;
+    color: rgb(8, 102, 8);
+}
+.trash-btn{
+    background: rgb(236, 45, 45);
+    color: white;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+.trash-btn:hover{
+    background: gray;
+    color: rgb(236, 45, 45);
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+.fa-check,.fa-trash{
+    pointer-events:none;
+}
+.completed{
+    color:black;
+    background:gray;
+    text-decoration:line-through;
+}
+select{
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    outline:none;
+    border:none;
+}
+.select{ 
+    margin:1rem;
+    border-radius: 8px;
+    position:relative;
+    overflow:hidden;
+}
+select{
+    color:black;
+    background:white;
+    width:8rem;
+    cursor:pointer;
+    padding:0.5rem;
+}
+.select::after{
+    pointer-events:none;
+    content:"\25BC";
+    position:absolute;
+    padding:0.5rem;
+    top: 0rem;
+    right:0rem;
+    color:white;
+    background:blue;
+    transition: all 0.3s ease;
+}
+.select:hover::after{
+    background:gray;
+    color:blue;
+}

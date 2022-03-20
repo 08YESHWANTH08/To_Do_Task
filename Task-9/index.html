@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Stylesfile.css">
+    <title>User's Todo</title>
+</head>
+<body>
+    <h1>User's Todo</h1>
+    <form>
+        <input type="text" placeholder="Todo's Title" class="todo-input">
+        <button class="todo-button"  type="submit">Add</button>
+        <div class="select">
+            <select name="todos" class="filter-todo" >
+                
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul style="list-style: none;" class="todo-list"></ul>
+    </div>
+    <form>
+        <button  value="clear" type="submit">Clear All</button>
+    </form>
+    <script src="./JSfile.js"></script>
+</body>
+</html>
